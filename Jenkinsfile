@@ -6,5 +6,11 @@ pipeline {
 				sh 'echo "Build completed."'
 			}
 		}
+
+		stage('Test Trigger') {
+        			steps{
+        				sh 'echo "Trigger works."'
+        			}
+        		}
 	}
 }
